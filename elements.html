@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Cabana Student - IO</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="assets/css/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie/v9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Cabana Student</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="index.html" class="button special"><span>HOME</span></a>
+									
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="banner">
+						<header>
+						
+							<h2>OPERATIONS RESEARCH</h2>
+								<ul class="icons major">
+								
+								<li><span class="icon major fa-pencil"><span class="label">Dolor</span></span></li>
+							</ul>
+							<p></p>
+							
+						</header>
+
+					</article>
+						
+
+
+<!-- Main 2-->
+
+               <section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>HOMEWORKS</h2>
+								<p><br />
+								</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-paper-plane-o">
+									<h3>First Practice</h3>
+									<p>Solve an industrial problem by operations research (optimization) and prepare a tutorial.</p><ul class="actions">
+								<li><a href="#fristpractice" class="button special">STAR</a></li>
+							</ul>
+								</li>
+								<li class="icon fa-laptop">
+									<h3>Second Practice</h3>
+									<p></p>
+								</li>
+								
+								
+							</ul>
+						</div>
+					</section>
+
+
+
+<!-- Main3 -->
+<article>
+        <section  id="fristpractice" class="wrapper style5">
+							<div class="inner">
+
+								<section>
+									<h2>FRIST PRACTICE</h2>
+
+									<p>Beside making a web site, solve an industrial problem by operations research (optimization) and prepare a tutorial. <a href="#">This is a link of the TUTORIAL</a>.</p>
+
+									<hr />
+									<header>
+
+		<!-- 							
+									
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<h6>Heading Level 6</h6>
+									<hr />
+	-->
+									<h4>CASE</h4>
+									<blockquote> 
+<span class="image right"><img src="images/CASO1.jpg" alt="" /></span>La compañía Riso fabrica impresoras. Además esta cuenta con dos plantas de fabricación y con dos Almacenes de distribución. Este mes, tiene 3 clientes importantes a los cuales cumplirá sus demandas que son de 5000, 6500, 4800 unidades. Se desea hallar el la cantidad de unidades que deberá fabricar cada planta y cuantas serán enviadas a cada almacén para reducir los costos. Teniendo en cuenta que el costo de transporte desde la planta 1 a los almacenes es $4 y 3$; planta 2 es $3.5 y $4.5, respectivamente. Por otra parte el envío hacia los clientes desde el primer almacén es $5, $4.5, $3; mientras que desde el segundo almacén es $5.5, $4, $3.2, respectivamente.
+Se dice que cada camión, dos por cada planta, que sale desde cualquiera de las dos plantas hacia el almacén 1 solo puede transportar 7000 unidades como máximo, mientras que para el almacen 2 es 10 000 unidades.
+
+									 </blockquote>
+
+<p> <strong><a href="https://drive.google.com/drive/#folders/0B8QfQeZ_DWg1fnhiUmhoVUR0YTAwbkkydWZJWWF3RDBpNmVteTE1c01EcTZMR2VEbFlEUDQ"> LINK Case document</a>.</strong></p>
+<P> <strong><a href="#">This is a link of the TUTORIAL</a></strong></P>
+									<h5>LINGO CODE </h5>
+
+									<pre><code>SETS:
+PLANTAALMACEN: CAPACIDAD;
+CLIENTES:DEMANDA;
+IMP (PLANTAALMACEN,CLIENTES): COSTO,VOLUMEN;
+ENDSETS
+
+DATA:
+PLANTAALMACEN = P1A1 P2A1 P1A2 P2A2;
+CLIENTES = C1 C2 C3;
+
+CAPACIDAD= 7000 7000 10000 10000;
+DEMANDA= 5000 6500 4800;
+COSTO = 9.0 8.5 7.0
+       8.5 8.0 6.5 
+       8.5 7.0 6.2
+       9.5 8.5 7.7;
+
+ENDDATA
+
+!OBEJETIVO;
+MIN = @SUM(IMP(I,J):COSTO(I,J)*VOLUMEN(I,J));
+
+!RESTRICCION DEMANDA;
+@FOR(CLIENTES(J): @SUM(PLANTAALMACEN(I): VOLUMEN(I,J))= DEMANDA(J));
+!CAPACIDAD DEL ALMACEN 1;
+@FOR (PLANTAALMACEN(I): @SUM(CLIENTES(J): VOLUMEN(I,J))<= CAPACIDAD(I));
+END
+</code></pre>
+								</section>
+<!-- 		
+								<section>
+									<h4>Lists</h4>
+									<div class="row">
+										<div class="6u 12u$(medium)">
+											<h5>Unordered</h5>
+											<ul>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Sagittis adipiscing.</li>
+												<li>Felis enim feugiat.</li>
+											</ul>
+											<h5>Alternate</h5>
+											<ul class="alt">
+												<li>Dolor pulvinar etiam.</li>
+												<li>Sagittis adipiscing.</li>
+												<li>Felis enim feugiat.</li>
+											</ul>
+										</div>
+										<div class="6u$ 12u$(medium)">
+											<h5>Ordered</h5>
+											<ol>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Etiam vel felis viverra.</li>
+												<li>Felis enim feugiat.</li>
+												<li>Dolor pulvinar etiam.</li>
+												<li>Etiam vel felis lorem.</li>
+												<li>Felis enim et feugiat.</li>
+											</ol>
+											<h5>Icons</h5>
+											<ul class="icons">
+												<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+												<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+												<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+											</ul>
+										</div>
+									</div>
+									<h5>Actions</h5>
+									<div class="row">
+										<div class="6u 12u$(medium)">
+											<ul class="actions">
+												<li><a href="#" class="button special">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+											</ul>
+											<ul class="actions small">
+												<li><a href="#" class="button special small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+											</ul>
+											<ul class="actions vertical">
+												<li><a href="#" class="button special">Default</a></li>
+												<li><a href="#" class="button">Default</a></li>
+											</ul>
+											<ul class="actions vertical small">
+												<li><a href="#" class="button special small">Small</a></li>
+												<li><a href="#" class="button small">Small</a></li>
+											</ul>
+										</div>
+										<div class="6u 12u$(medium)">
+											<ul class="actions vertical">
+												<li><a href="#" class="button special fit">Default</a></li>
+												<li><a href="#" class="button fit">Default</a></li>
+											</ul>
+											<ul class="actions vertical small">
+												<li><a href="#" class="button special small fit">Small</a></li>
+												<li><a href="#" class="button small fit">Small</a></li>
+											</ul>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<h4>Table</h4>
+									<h5>Default</h5>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h5>Alternate</h5>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h4>Buttons</h4>
+									<ul class="actions">
+										<li><a href="#" class="button special">Special</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button big">Big</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions fit">
+										<li><a href="#" class="button fit">Fit</a></li>
+										<li><a href="#" class="button special fit">Fit</a></li>
+										<li><a href="#" class="button fit">Fit</a></li>
+									</ul>
+									<ul class="actions fit small">
+										<li><a href="#" class="button special fit small">Fit + Small</a></li>
+										<li><a href="#" class="button fit small">Fit + Small</a></li>
+										<li><a href="#" class="button special fit small">Fit + Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button special icon fa-download">Icon</a></li>
+										<li><a href="#" class="button icon fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button special disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</section>
+
+								<section>
+									<h4>Form</h4>
+									<form method="post" action="#">
+										<div class="row uniform">
+											<div class="6u 12u$(xsmall)">
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Name" />
+											</div>
+											<div class="6u$ 12u$(xsmall)">
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="Email" />
+											</div>
+											<div class="12u$">
+												<div class="select-wrapper">
+													<select name="demo-category" id="demo-category">
+														<option value="">- Category -</option>
+														<option value="1">Manufacturing</option>
+														<option value="1">Shipping</option>
+														<option value="1">Administration</option>
+														<option value="1">Human Resources</option>
+													</select>
+												</div>
+											</div>
+											<div class="4u 12u$(small)">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="4u 12u$(small)">
+												<input type="radio" id="demo-priority-normal" name="demo-priority">
+												<label for="demo-priority-normal">Normal</label>
+											</div>
+											<div class="4u$ 12u$(small)">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="6u 12u$(small)">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="6u$ 12u$(small)">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="12u$">
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+											<div class="12u$">
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" class="special" /></li>
+													<li><input type="reset" value="Reset" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</section>
+	
+								<section>
+									<h4>Image</h4>
+									<h5>Fit</h5>
+									<div class="box alt">
+										<div class="row uniform 50%">
+											<div class="12u"><span class="image fit"><img src="images/banner.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic02.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic01.jpg" alt="" /></span></div>
+											<div class="4u"><span class="image fit"><img src="images/pic03.jpg" alt="" /></span></div>
+										</div>
+									</div>
+									<h5>CASE </h5>
+									<p><span class="image left"><img src="images/pic04.jpg" alt="" /></span>La compañía Riso fabrica impresoras. Además esta cuenta con dos plantas de fabricación y con dos Almacenes de distribución. Este mes, tiene 3 clientes importantes a los cuales cumplirá sus demandas que son de 5000, 6500, 4800 unidades. Se desea hallar el la cantidad de unidades que deberá fabricar cada planta y cuantas serán enviadas a cada almacén para reducir los costos. Teniendo en cuenta que el costo de transporte desde la planta 1 a los almacenes es $4 y 3$; planta 2 es $3.5 y $4.5, respectivamente. Por otra parte el envío hacia los clientes desde el primer almacén es $5, $4.5, $3; mientras que desde el segundo almacén es $5.5, $4, $3.2, respectivamente.
+Se dice que cada camión, dos por cada planta, que sale desde cualquiera de las dos plantas hacia el almacén 1 solo puede transportar 7000 unidades como máximo, mientras que para el almacen 2 es 10 000 unidades.
+</p>
+									<p><span class="image right"><img src="images/pic05.jpg" alt="" /></span>Vestibulum ultrices risus velit, sit amet blandit massa auctor sit amet. Sed eu lectus sem. Phasellus in odio at ipsum porttitor mollis id vel diam. Praesent sit amet posuere risus, eu faucibus lectus. Vivamus ex ligula, tempus pulvinar ipsum in, auctor porta quam. Proin nec dui cursus, posuere dui eget interdum. Fusce lectus magna, sagittis at facilisis vitae, pellentesque at etiam. Quisque posuere leo quis sem commodo, vel scelerisque nisi scelerisque. Suspendisse id quam vel tortor tincidunt suscipit. Nullam auctor orci eu dolor consectetur, interdum ullamcorper ante tincidunt. Mauris felis nec felis elementum varius. Nam sapien ante, varius in pulvinar vitae, rhoncus id massa. Donec varius ex in mauris ornare, eget euismod urna egestas. Etiam lacinia tempor ipsum, sodales porttitor justo. Aliquam dolor quam, semper in tortor eu, volutpat efficitur quam. Fusce nec fermentum nisl. Aenean erat diam, tempus aliquet erat. Etiam iaculis nulla ipsum, et pharetra libero rhoncus ut. Phasellus rutrum cursus velit, eget condimentum nunc blandit vel. In at pulvinar lectus. Morbi diam ante, vulputate et imperdiet eget, fermentum non dolor. Ut eleifend sagittis tincidunt. Sed viverra commodo mi, ac rhoncus justo. Duis neque ligula, elementum ut enim vel, posuere finibus justo. Vivamus facilisis maximus nibh quis pulvinar. Quisque hendrerit in ipsum id tellus facilisis fermentum. Proin mauris dui.</p>
+								</section>
+
+							</div>
+						</section>
+					-->
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+						<li><a href="https://twitter.com/yennycabana" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="https://www.facebook.com/yenny.cabana.7" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-youtube"><span class="label">Youtube</span></a></li>
+							<li><a href="https://www.linkedin.com/profile/view?id=421749088&trk=nav_responsive_tab_profile" class="icon fa-github-square"><span class="label">Github</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; Yenny Cabana Alvarez</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/init.js"></script>
+
+	</body>
+</html>
