@@ -71,7 +71,10 @@
 								</li>
 								<li class="icon fa-laptop">
 									<h3>Second Practice</h3>
-									<p></p>
+									<p><ul class="actions">
+								<li><a href="#thirdpractice" class="button special">STAR</a></li>
+							</ul>
+								</li></p>
 								</li>
 								
 								
@@ -143,6 +146,72 @@ MIN = @SUM(IMP(I,J):COSTO(I,J)*VOLUMEN(I,J));
 END
 </code></pre>
 								</section>
+								</article>
+								<article>
+        <section  id="thirdpractice" class="wrapper style5">
+							<div class="inner">
+
+								<h5>LINGO CODE </h5>
+<section>
+									<h2>THIRD PRACTICE</h2>
+									<pre><code>
+SETS:
+   months/1..6/:P,W,O,H,F,S,I,B,WD,D;
+!p= #productos 
+w= # trabajadores
+0= #hrs de sobretiempo
+f= # despedidas de trabajo
+h= # trabajadores contratados
+s= # prod. por subcontratacion
+i= # inventario
+B= # backlog
+Wd= dias disponibles de trab.
+d=demanda;
+   ENDSETS
+
+!Funcion Objetivo;
+  min=@sum(months(t):pc*P(t)+15*8*WD(t)*W(t)+
+   oc*O(t)+hc*H(t)+fc*F(t)+sc*S(t)+ic*I(t)+bc*B(t));
+ !RESTRICCIONES
+
+    Relacion entre los productos que se fabrican y salen; 
+  @for(months(t)| t#GT#1:
+  P(t)+I(t-1)+S(t)+B(t)-I(t)-B(t-1)= D(t););
+  P(1)+I0+S(1)+B(1)-I(1)-B0 = D(1);
+
+!  inventario 25%;
+  @for(months(t):
+  I(t) > 0.25*D(t);); 
+  B(6) = 0;
+
+!  Relacion de trabajadores;  
+  @for(months(t)| t#GT#1:
+  W(t)-W(t-1)-H(t)+F(t) = 0;);
+  W(1)-W0-H(1)+F(1)=0;
+
+!  Relacion de horas de trabajo;
+  @for(months(t):
+  5*P(t)-8*WD(t)*W(t)-O(t) < 0;);
+  
+  DATA:
+  D=1800,1500,1100,900,1100,1600;!Demanda cada mes;
+  WD=22,19,21,21,22,20; !Dias disponibles de trabajo por mes;
+  pc=100; ! costo por material;
+  oc=20; !costo por sobrobretiempo por unidad;
+  hc=1000; ! costo de contratacion por cada trabajador;
+  fc=1500; !costo de despido por cada trabajador;
+  ic=5;  ! costo de inventario por unidad;
+  bc=10;  !costo de backlog por unidad;
+  sc=120;  !costo de subcontratacion por unidad;
+  I0=400;  !inventario inicial;
+  B0=0; !backlog inicial;
+  W0=38; !# de trabajadores inicial;
+  ENDDATA
+ END
+
+										</code></pre>
+								</section>
+							</article>
 <!-- 		
 								<section>
 									<h4>Lists</h4>
