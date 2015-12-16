@@ -17,9 +17,10 @@
 					<h1 id="logo"><a href="index.html"> <img src="images/logo.jpg" alt="" /> UTEC </a></h1>
 					<nav id="nav">
 						<ul>
-							<li><a href="index.html">Principal</a></li>
+							<li><a href="index.html"><b>Principal</b></a></li>
 							<li>
-								<a href="#">Áreas</a>
+								<a href="#"><b>Áreas</b>
+									</a>
 								<ul>
 									<li><a href="left-sidebar.html"> Mecánica</a></li>
 									<li><a href="right-sidebar.html">Electronica</a></li>
@@ -45,27 +46,34 @@
 							<div class="4u 12u$(medium)">
 
 								<!-- Sidebar -->
-									<section id="sidebar">
+									<section id="content">
+									<h2><strong>Desafíos de diseño</strong></h2>
+										<h3> <strong>Empezar el mecanismo tomando en cuenta el estado del arte:</strong></h3>
+										<p> Encontrar un buen diseño y replicarlo pero agregarle algo innovador para mejora tanto el funcionamiento como el diseño.</p>
+										<a href="#" class="image fit"><img src="images/estructura2.png" alt="" /></a>
 										<section>
-											<h3>EDITAR</h3>
-											<p>ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR </p>
+											<h3> <strong>Decisión de press-fit o empernado:</strong></h3>
+											<p>En un primer momento se pensó utilizar press-fit como unión de la estructura, sin embargo se necesitó algo más resistente y que sea desarmable más de un par de veces, para poder colocar algunas piezas que iban dentro de la estructura.</p>
+										<a href="#" class="image fit"><img src="images/pressfit.png" alt="" /></a>
+										</section>
+										<section>
+											<h3> <strong>Cambiar de diseño cuando el proyecto ya está avanzando:</strong></h3>
+											<p>Se tuvo un diseño en un primer momento con un tipo de material (acrílico calibrado), sin embargo por motivos de falta de material se tuvo que cambiar algunos diseños como la estructura.</p>
+										</section>
+										<section>
+											<h3> <strong>¿Hay una conexión aparte de la rótula?</strong></h3>
+											<p>Se pensó usar un rotula en un primer momento puesto que todos los diseños de impresoras 3d lo usan, sin embargo se investigó otras posibilidades para reemplazar esta pieza y se tomó una decisión final de escoger una unión universal como mecanismo de conexión.</p>
+										</section>
+										<section>
+											<h3> <strong>Descargar piezas para corte</strong></h3>
 											<footer>
 												<ul class="actions">
-													<li><a href="#" class="button">Learn More</a></li>
+												<p> </p>
+												<li><a href="https://onedrive.live.com/redir?resid=B436E520BA6A68E4%211599" class="button special icon fa-download">Descargar</a></li>
 												</ul>
 											</footer>
 										</section>
-										<hr />
-										<section>
-											<a href="#" class="image fit"><img src="images/pic0.jpg" alt="" /></a>
-											<h3>ESCRIBIR</h3>
-											<p>ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR .</p>
-											<footer>
-												<ul class="actions">
-													<li><a href="#" class="button">MAS</a></li>
-												</ul>
-											</footer>
-										</section>
+
 									</section>
 
 							</div>
@@ -73,17 +81,29 @@
 
 								<!-- Content -->
 									<section id="content">
-										<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
-										<h3>ESCRIBIR</h3>
-										<p>ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR ESCRIBIR .</p>
-										
-										<h3>ESCRIBIR</h3>
-										<p>ESCRIBIRESCRIBIRESCRIBIR.</p>
-										<ul>
-											<li>ESCRIBIR</li>
-											<li>ESCRIBIR</li>
-											
-										</ul>
+										<center><iframe width="640" height="380" src="https://www.youtube.com/embed/fhHWd1ZZ7zk" frameborder="0" allowfullscreen></iframe>
+										</center>
+										<h3><b>Estructura</b></h3>
+										<p>Se diseñó la estructura íntegramente de acrílico con espesor de 5mm, donde irá montado el extrusor y la parte electrónica. Para poder ensamblar las diferentes piezas se usaron pernos y tuercas de diferentes medidas (M5 y M3).</p>
+										<a href="#" class="image fit"><img src="images/estructura.png" alt="" /></a>
+										<h3><b>Brazos</b></h3>
+										<p>Se usó acrílico de 8mm para los brazos que sostienen el sistema de extrusión y además para las conexiones con la junta universal (cruceta) de cada brazo.</p>
+										<a href="#" class="image fit"><img src="images/brazos.png" alt="" /></a>
+										<h3><b>Uniones</b></h3>
+										<p>Se usaron juntas universales (crucetas) para unir la corredera con los brazos y asimismo los brazos con el sistema de extrusión. El material usado para la fabricación de las uniones universales es resina y se usó impresión 3D para su fabricación.</p>
+										<a href="#" class="image fit"><img src="images/uniones.png" alt="" /></a>
+										<h3><b>Correderas</b></h3>
+										<p>Se hizo el diseño de las correderas para permitir el movimiento de cada par de brazos, obteniendo como resultado un movimiento en los tres ejes del soporte del extrusor con la combinación de estos tres movimientos lineales. El material usado para este diseño es resina y se fabricó en una impresora 3D.</p>
+										<a href="#" class="image fit"><img src="images/correderas.png" alt="" /></a>
+										<h3><b>Poleas</b></h3>
+										<p>Los soportes para la polea superior mantienen la rigidez de las varillas guía y posicionan la polea GT2 en la misma dirección perpendicular que el eje del motor en la parte inferior de la estructura, permitiendo así el movimiento recto de las correas.</p>
+										<a href="#" class="image fit"><img src="images/poleas.png" alt="" /></a>
+										<h3><b>Extrusor</b></h3>
+										<p>El soporte para el extrusor tiene un diseño que permite el ajuste necesario para la boquilla del extrusor, las conexiones con los brazos a través de las uniones universales (crucetas) le dan un movimiento en las tres direcciones principales.</p>
+										<a href="#" class="image fit"><img src="images/extrusor.png" alt="" /></a>
+										<h3><b>Fajas</b></h3>
+										<p>El movimiento rotacional del eje del motor es transmitido a las poleas, las cuales a su vez transmiten un movimiento positivo (sin deslizamiento) a las fajas convirtiéndose en lineal. Este mecanismo permite darle precisión y control al momento de la impresión.</p>
+										<a href="#" class="image fit"><img src="images/fajas.png" alt="" /></a>
 									</section>
 
 							</div>
@@ -94,10 +114,8 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
+			
 						<li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
-				
-
 						<li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
 						<li><a href="#" class="icon alt fa-envelope"><span class="label">Email</span></a></li>
