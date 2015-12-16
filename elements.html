@@ -102,29 +102,68 @@ void loop(){
 <P><center><iframe width="560" height="315" src="https://www.youtube.com/embed/eVk3JBLJZr4?rel=0" frameborder="0" allowfullscreen></iframe></center>
 										
 									 </P>
+
+									<pre> <code>#include <Wire.h>
+#include <EEPROM.h>
+#include<stdlib.h>
+//#include <math.h>
+
+
+#define PRIMERA_VEZ  //Comentar para que los valores se carguen nuevamente y no se guarden en la EEPROM
+#define BLOQUEO_DESPUES_DEL_GIRO
+
+#define PIN_DIR 9
+#define PIN_PULSE 8
+#define PIN_ENABLED 7
+#define PIN_QUEQUE 6
+#define PIN_FIN_DE_CARRERA_A A0
+#define PIN_FIN_DE_CARRERA_B A1
+
+
+#define PASOS_POR_MILIMETRO 80.0
+#define GRADOS_POR_PASO 1.8
+#define VELOCIDAD_MAXIMA 100.0 //mm/s
+#define ACELERACION_MAXIMA 10
+#define VELOCIDAD_ANGULAR 360 //grados/s         1.8 grados por 10 milisegundos
+#define DISTANCIA_MINIMA 400.0
+#define DISTANCIA_MAXIMA  0.1
+
+
+#define HORARIO 1
+#define ANTIHORARIO -1
+#define GRADOS 0
+#define RADIANES 1
+
+
+#define POSICION_ADDRESS 0x04
+#define VELOCIDAD_ADDRESS 0x08
+#define ACELERACION_ADDRESS 0x0C
+#define ANGULO_ADDRESS 0x10
+#define ERROR_ADDRESS 0x11
+
+
+
+int direccionDispositivo = 0x00;//LAS DIRECCIONES PUEDEN VARIAR DE 0x00 a 0x07
+byte UltimoComandoRecibido1 = 0x00;
+byte UltimoComandoRecibido2 = 0x00;
+
+int dirPin = PIN_DIR;
+int pulsePin = PIN_PULSE;
+int enablePin = PIN_ENABLED;
+int quequePin = PIN_QUEQUE;
+
+int pinesDireccion[3] = {4,5,6};
+
+
+float pasosPorMilimetro = PASOS_POR_MILIMETRO;
+float milimetrosPorPaso = 1.0/PASOS_POR_MILIMETRO;
+float velocidadMaxima = VELOCIDAD_MAXIMA; //cm por segundo
+float aceleracionMaxima = ACELERACION_MAXIMA;</code></pre>
+En el siguiente link se mostrará la programación completa apta para descargar. <a href="https://github.com/Bregymr/firmBMR"><strong>ENLACE</strong></a>
 							</section>
 
 						<!-- Lists -->
-							<section>
-								<h3>PRUEBA 1</h3>
-								<div class="row">
-
-									
-									<P> </P>
-									<div class="6u 12u(xsmall)">
-
-										
-										<ul>
-											<li>CLKSDNVLKFSNV</li>
-											<li>SKDCLKSNVLFNVLDF</li>
-											<li>FF,VMDFVMLDKFV</li>
-										</ul>
-
-										
-										
-											<li>ESCRIBIRESCRIBIRESCRIBIRESCRIBIR</li>
-									
-</section>
+							
 									</div>
 									
 								</div>
