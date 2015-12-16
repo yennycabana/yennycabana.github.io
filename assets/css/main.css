@@ -1601,10 +1601,17 @@
 		margin: 0 0 2em 0;
 	}
 
-	h1, h2, h3, h4, h5, h6,{
+	h1, h2, h3, h4, h5,{
 		color: #ffffff;
 		font-weight: 300;
 		line-height: 1em;
+		margin: 0 0 1em 0;
+	}
+
+    h6,{
+		color: #1c2536;
+		font-weight: 300;
+		line-height: 1.5em;
 		margin: 0 0 1em 0;
 	}
 
@@ -1614,7 +1621,7 @@
 		}
 
 	h2 {
-		font-size: 2em;
+		font-size: 2.3em;
 		line-height: 1.5em;
 		letter-spacing: -0.025em;
 	}
@@ -1635,9 +1642,11 @@
 	}
 
 	h6 {
-		font-size: 0.7em;
+		font-size: 3em;
 		line-height: 1.5em;
+		letter-spacing: -0.025em;
 	}
+
 
 
 
@@ -2109,8 +2118,8 @@
 	}
 
 	header h2 + p {
-		font-size: 1.25em;
-		margin-top: -1em;
+		font-size: 2.5em;
+	    margin-top: -1em;
 		line-height: 1.75em;
 	}
 
@@ -3335,7 +3344,7 @@
 	#banner {
 		background-attachment: fixed;
 		background-color: #2d3269;
-		background-image: url("../../images/DDD.jpg");      /* FONDO PRINCIPAL*/
+		background-image: url("../../images/fondo.jpg");      /* FONDO PRINCIPAL*/
 		background-position: center center;
 		background-size: cover;
 		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.3);
@@ -3383,12 +3392,13 @@
 			}
 
 				#banner .content header h2 {
-					font-size: 2.5em;
+					font-size: 4.5em;
 					margin: 0;
 				}
 
 				#banner .content header p {
 					margin: 0.5em 0 0 0;
+					
 					top: 0;
 				}
 
@@ -3628,6 +3638,7 @@
 
 			h2 {
 				font-size: 1.5em;
+				
 			}
 
 			h3 {
@@ -3645,7 +3656,8 @@
 			}
 
 			header h2 + p {
-				font-size: 1em;
+				font-size: 2em;
+			
 			}
 
 			header h3 + p {
@@ -3655,7 +3667,7 @@
 			header h4 + p,
 			header h5 + p,
 			header h6 + p {
-				font-size: 0.9em;
+				font-size: 1em;
 			}
 
 			header.major {
@@ -3713,7 +3725,8 @@
 				}
 
 					#banner .content header h2 {
-						font-size: 1.5em;
+						font-size: 2em;
+						
 					}
 
 					#banner .content .image {
